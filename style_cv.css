@@ -1,0 +1,113 @@
+body
+{
+	background-color: #FEE101;
+	font-family: 'homer_simpson_revisedregular', Arial, sans-serif;
+	color: black;
+	font-size: 1.7em;
+	}
+
+#bloc_page
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+aside
+{
+	width: 15%;
+	min-height: 100%;
+	background-color: #794E21;
+	border: 1.5px black solid;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px black;
+	margin-right: 2%;
+}
+
+@media screen and (max-width: 1023px)
+{
+	aside
+	{
+		display: none;
+	}
+
+	#contenu
+	{
+		flex-direction: column;		
+	}
+
+	.el_contenu
+	{
+		margin: auto;
+	}
+
+	#en_tete
+	{
+		justify-content: flex-start;
+	}
+
+}
+
+@media screen and (max-width: 480px)
+{
+	#en_tete
+	{
+		flex-wrap: wrap;
+		font-size: 60%;
+	}
+}
+
+
+#en_tete
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+h1
+{
+	font-family: 'simpsonfontsimpsonfont', Arial, sans-serif;
+	font-weight: normal;
+	font-size: 3em;
+}
+
+.el_en_tete
+{
+	text-align: center;
+}
+
+#par_intro
+{
+	font-size: 1.5em;
+}
+
+
+#contenu
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.el_contenu
+{
+	min-width: 250px;
+	border: 1.5px black solid;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px black;
+	background-color: #CBA210;
+	margin: 3px;
+	padding: 3px;
+	text-align: justify;
+}
+
+h2
+{
+	font-family: 'akbar_plain', Arial, sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+	text-align: center;
+}
+
